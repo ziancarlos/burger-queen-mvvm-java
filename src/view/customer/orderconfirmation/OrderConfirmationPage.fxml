@@ -21,11 +21,6 @@
             <Font name="System Bold" size="48.0" />
          </font>
       </Text>
-      <Button fx:id="doneBtn" layoutX="48.0" layoutY="735.0" mnemonicParsing="false" onAction="#doneOnAction" prefHeight="69.0" prefWidth="332.0" style="-fx-background-color: ffb800;" text="Paid" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Button>
       <TableView fx:id="table" layoutX="48.0" layoutY="306.0" prefHeight="257.0" prefWidth="332.0">
         <columns>
           <TableColumn fx:id="menuNameCol" prefWidth="177.0" text="Menu Name" />
@@ -38,7 +33,7 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <Button fx:id="cancelBtn" layoutX="48.0" layoutY="735.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="69.0" prefWidth="332.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+      <Button fx:id="cancelBtn" layoutX="48.0" layoutY="721.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="69.0" prefWidth="332.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>

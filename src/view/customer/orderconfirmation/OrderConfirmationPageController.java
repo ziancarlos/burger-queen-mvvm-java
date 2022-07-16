@@ -48,9 +48,4 @@ public class OrderConfirmationPageController {
 
     }
 
-    @FXML
-    void doneOnAction(ActionEvent event) {
-
-    }
-
 }

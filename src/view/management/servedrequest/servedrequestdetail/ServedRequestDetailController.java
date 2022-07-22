@@ -1,21 +1,22 @@
-package view.customer.selectmenu;
+package view.management.servedrequest.servedrequestdetail;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 
-public class SelectMenuController {
-
-    @FXML
-    private TableColumn<?, ?> idCol;
+public class ServedRequestDetailController {
 
     @FXML
-    private TableColumn<?, ?> menuNameCol;
+    private Text informationText;
 
     @FXML
-    private TableColumn<?, ?> priceCol;
+    private TableColumn<?, ?> menuIdCol;
+
+    @FXML
+    private TableColumn<?, ?> menuIdCol1;
 
     @FXML
     private TableColumn<?, ?> quantityCol;
@@ -24,22 +25,12 @@ public class SelectMenuController {
     private TableView<?> table;
 
     @FXML
-    void addOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
     void backOnAction(MouseEvent event) {
 
     }
 
     @FXML
-    void deleteOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void doneOnAction(ActionEvent event) {
+    void servedOnAction(ActionEvent event) {
 
     }
 

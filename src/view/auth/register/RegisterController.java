@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-public class RegisterPageController {
+public class RegisterController {
 
     @FXML
     private TextField passwordTf;

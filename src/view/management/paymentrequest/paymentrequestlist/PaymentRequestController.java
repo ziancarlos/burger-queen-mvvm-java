@@ -1,4 +1,4 @@
-package view.management.paymentrequest;
+package view.management.paymentrequest.paymentrequestlist;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,7 +6,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
-public class PaymentRequestController {
+public class PaymentRequestListController {
 
     @FXML
     private TableColumn<?, ?> dateTimeCol;

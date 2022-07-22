@@ -1,4 +1,4 @@
-package view.management.servedrequest;
+package view.management.servedrequest.servedrequestlist;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,7 +6,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
-public class ServedRequestController {
+public class ServedRequestListController {
 
     @FXML
     private TableColumn<?, ?> orderIdCol;
@@ -31,7 +31,7 @@ public class ServedRequestController {
     }
 
     @FXML
-    void viewOnAction(ActionEvent event) {
+    void detailOnAction(ActionEvent event) {
 
     }
 

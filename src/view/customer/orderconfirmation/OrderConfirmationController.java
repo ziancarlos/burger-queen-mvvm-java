@@ -3,13 +3,15 @@ package view.customer.orderconfirmation;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 
-public class OrderConfirmationPageController {
+public class OrderConfirmationController {
 
     @FXML
     private AnchorPane anchorPane;
@@ -18,10 +20,16 @@ public class OrderConfirmationPageController {
     private Button cancelBtn;
 
     @FXML
-    private Button doneBtn;
+    private ListView<?> detailLv;
+
+    @FXML
+    private TextField discountCodeTf;
 
     @FXML
     private TableColumn<?, ?> menuNameCol;
+
+    @FXML
+    private Button orderBtn;
 
     @FXML
     private Text orderText;
@@ -36,7 +44,9 @@ public class OrderConfirmationPageController {
     private TableView<?> table;
 
     @FXML
-    private Text totalText;
+    void applyOnAction(ActionEvent event) {
+
+    }
 
     @FXML
     void backOnAction(MouseEvent event) {
@@ -45,6 +55,11 @@ public class OrderConfirmationPageController {
 
     @FXML
     void cancelOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void orderOnAction(ActionEvent event) {
 
     }
 

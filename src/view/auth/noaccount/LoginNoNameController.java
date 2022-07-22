@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-public class LoginNoNamePageController {
+public class LoginNoNameController {
 
     @FXML
     private TextField nameTf;

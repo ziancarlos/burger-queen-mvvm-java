@@ -1,8 +1,9 @@
-package view.menu;
+package view.management.home;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 
-public class MenuPageController {
+public class HomeController {
 
     @FXML
     void dashboardOnAction(ActionEvent event) {

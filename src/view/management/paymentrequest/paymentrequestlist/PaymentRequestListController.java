@@ -9,22 +9,21 @@ import javafx.scene.input.MouseEvent;
 public class PaymentRequestListController {
 
     @FXML
-    private TableColumn<?, ?> dateTimeCol;
+    private TableColumn<?, ?> avaliableCol;
 
     @FXML
-    private TableColumn<?, ?> orderIdCol;
+    private TableColumn<?, ?> idCol;
+
+    @FXML
+    private TableColumn<?, ?> menuCol;
 
     @FXML
     private TableView<?> table;
 
     @FXML
-    private TableColumn<?, ?> tableCol;
+    void addOnAction(ActionEvent event) {
 
-    @FXML
-    private TableColumn<?, ?> totalCol;
-
-    @FXML
-    private TableColumn<?, ?> totalCol11;
+    }
 
     @FXML
     void backOnAction(MouseEvent event) {
@@ -32,12 +31,22 @@ public class PaymentRequestListController {
     }
 
     @FXML
-    void cancelOnAction(ActionEvent event) {
+    void deactivateOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void manageOnAction(ActionEvent event) {
+    void deleteOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void detailOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void editOnAction(ActionEvent event) {
 
     }
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="428.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="48.0" layoutY="57.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../BackButton.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="48.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Detail" wrappingWidth="262.5703125">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="48.0" layoutY="473.0" prefHeight="346.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="49.0" text="Id" />
+          <TableColumn fx:id="quantityCol" prefWidth="156.0" text="Supplier Name" />
+            <TableColumn fx:id="nameCol1" prefWidth="158.0" text="Quantity Purchase (Gram/Milliliter)" />
+            <TableColumn fx:id="purchaseDateCol" prefWidth="92.0" text="Purchase Date" />
+        </columns>
+      </TableView>
+      <ListView fx:id="lv" layoutX="48.0" layoutY="269.0" prefHeight="184.0" prefWidth="332.0" />
+   </children>
+</AnchorPane>

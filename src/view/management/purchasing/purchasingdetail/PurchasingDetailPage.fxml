@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="428.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.management.purchasing.purchasingdetail.PurchasingDetailController">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="48.0" layoutY="57.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../BackButton.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="48.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchasing Detail" wrappingWidth="262.5703125">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <ListView fx:id="lv" layoutX="48.0" layoutY="260.0" prefHeight="200.0" prefWidth="332.0" />
+      <TreeTableView fx:id="table" layoutX="48.0" layoutY="474.0" prefHeight="344.0" prefWidth="332.0">
+        <columns>
+          <TreeTableColumn fx:id="idCol" prefWidth="115.0" text="Ingredients Id" />
+          <TreeTableColumn fx:id="nameCol" prefWidth="124.0" text="Ingredients Name" />
+            <TreeTableColumn fx:id="quantityCol" prefWidth="124.0" text="Quantity Bought(Grams/Milliliter)" />
+        </columns>
+      </TreeTableView>
+   </children>
+</AnchorPane>

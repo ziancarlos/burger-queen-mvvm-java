@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="428.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.management.ingredient.ingredientlist.IngredientListController">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="48.0" layoutY="59.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../BackButton.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="48.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients" wrappingWidth="262.5703125">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="48.0" layoutY="257.0" prefHeight="544.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="72.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="259.0" text="Ingredient Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="48.0" layoutY="200.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: ffb800;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="138.0" layoutY="200.0" mnemonicParsing="false" onAction="#editOnAction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: red;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="229.0" layoutY="200.0" mnemonicParsing="false" onAction="#detailOnAction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: white;" text="Detail" textFill="#ffb800">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

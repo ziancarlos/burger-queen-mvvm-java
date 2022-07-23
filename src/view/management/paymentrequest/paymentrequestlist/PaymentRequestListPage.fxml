@@ -35,12 +35,12 @@
             <TableColumn fx:id="totalCol11" prefWidth="157.0" text="Date Time" />
         </columns>
       </TableView>
-      <Button layoutX="48.0" layoutY="806.0" mnemonicParsing="false" onAction="#manageOnAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: ffb800; -fx-background-radius: 4;" text="Detail" textFill="WHITE">
+      <Button layoutX="48.0" layoutY="273.0" mnemonicParsing="false" onAction="#manageOnAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: ffb800; -fx-background-radius: 4;" text="Detail" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="161.0" layoutY="806.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: red; -fx-background-radius: 4;" text="Cancel" textFill="WHITE">
+      <Button layoutX="161.0" layoutY="273.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: red; -fx-background-radius: 4;" text="Cancel" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="428.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.management.role.rolelist.RoleListController">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="41.0" layoutY="61.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../BackButton.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="41.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role List" wrappingWidth="290.640625">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="41.0" layoutY="200.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: ffb800;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView layoutX="41.0" layoutY="258.0" prefHeight="494.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="94.0" text="Role Id" />
+          <TableColumn fx:id="roleNameCol" prefWidth="214.0" text="Role Name" />
+            <TableColumn fx:id="roleDescriptionCol" prefWidth="261.0" text="Role Description" />
+            <TableColumn fx:id="userConnectedCol" prefWidth="106.0" text="User Connected" />
+            <TableColumn fx:id="createdAtCol" minWidth="7.0" prefWidth="198.0" text="Created At" />
+            <TableColumn fx:id="updatedAtCol" minWidth="7.0" prefWidth="176.0" text="Updated At" />
+        </columns>
+      </TableView>
+      <Button layoutX="132.0" layoutY="200.0" mnemonicParsing="false" onAction="#editOnAction" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: white;" text="Edit" textFill="#ffb800">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="223.0" layoutY="200.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="41.0" layoutY="773.0" mnemonicParsing="false" onAction="#detailOnAction" prefHeight="40.0" prefWidth="332.0" style="-fx-background-color: ffb800;" text="Detail" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="428.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.management.discount.discountdetail.DiscountDetailController">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="41.0" layoutY="61.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../BackButton.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="41.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount Detail" wrappingWidth="290.640625">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <TableView layoutX="41.0" layoutY="419.0" prefHeight="393.0" prefWidth="343.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="94.0" text="Order Id" />
+          <TableColumn fx:id="dateCol" prefWidth="179.0" text="Order Date" />
+            <TableColumn fx:id="fullNameCol" prefWidth="254.0" text="Customer Full Name" />
+            <TableColumn fx:id="amountPercentCol" prefWidth="202.0" text="Discount Amount (%)" />
+            <TableColumn fx:id="amountDollarCol" minWidth="7.0" prefWidth="186.0" text="Discount Amount ($)" />
+            <TableColumn fx:id="beforeDiscountCol" minWidth="7.0" prefWidth="204.0" text="Before Discount ($)" />
+            <TableColumn fx:id="afterDiscountCol" minWidth="7.0" prefWidth="204.0" text="After Discount ($)" />
+        </columns>
+      </TableView>
+      <ListView fx:id="lv" layoutX="41.0" layoutY="272.0" prefHeight="133.0" prefWidth="343.0" />
+   </children>
+</AnchorPane>
